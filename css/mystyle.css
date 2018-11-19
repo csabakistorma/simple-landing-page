@@ -37,10 +37,35 @@ header hr {
 	width: 20rem;
 }
 
+/* Tablet view*/
+@media (min-width: 768px) {
+	header {
+		height: 50vh;
+	}
+	
+	header h1 {
+		font-size: 4rem;
+	}
+	
+	header h5 {
+		font-size: 1.75rem;
+	}
+	
+	header hr {
+		width: 25rem;
+	}
+}
+
 header ul {
 	margin: 0;
 	padding: 0;
 	text-align: center;
+}
+
+@media (min-width: 768px) {
+	header li {
+		display: inline-block;
+	}
 }
 
 header li {
@@ -74,24 +99,25 @@ header a {
 
 #main-content h1 {
 	font-size: 1.75rem;
+	margin-top: 3rem;
 }
 
 
 
+
 /* =================== BANNER =================== */
+#banner-container {
+	display: table;
+}
+
 #banner {
 	height: 70vh;
 	background-image: url(../img/banner-bg.jpg);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	padding-top: 4rem;
-}
-
-@media (orientation: landscape) {
-	#banner {
-		height: 100vh;
-	}
+	display: table-cell;
+	vertical-align: middle;
 }
 
 #banner ul{
@@ -118,13 +144,21 @@ header a {
 	padding-left: 1rem;
 }
 
-
+@media (min-width: 768px) {
+	#banner {
+		height: 35vh;
+	}
+	
+	#banner li {
+		display: inline-block;
+	}
+}
 
 
 
 /* ================ FOOTER ================== */
 footer {
-	padding: 2rem 0
+	padding: 2rem 0;
 }
 
 footer ul {
