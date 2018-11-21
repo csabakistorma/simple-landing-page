@@ -21,6 +21,8 @@ header {
 	}
 }
 
+
+
 header h1 {
 	font-size: 2.5rem;
 	color: white;
@@ -82,6 +84,20 @@ header a {
 }
 
 
+/* Nagyfelbotású telefon fektetett módban. pl. iphone X*/
+@media (min-width: 812px) and (orientation:landscape) {
+	header {
+		height: 120vh;
+	}
+}
+
+/* Tablet fektett módban. Itt már kisebbre kell venni a magasságot a mobilokhoz képest*/
+@media (min-width: 1024px) and (orientation:landscape) {
+	header {
+		height: 60vh;
+	}
+}
+
 
 
 
@@ -99,9 +115,15 @@ header a {
 
 #main-content h1 {
 	font-size: 1.75rem;
-	margin-top: 3rem;
+	margin-top: 1rem;
 }
 
+/* Fektetett módban egymás mellé igazítjuk a diveket*/
+@media (min-width: 667px) and (orientation:landscape) {
+    .col-md-6 {
+        max-width: 50%;
+    }
+}
 
 
 
@@ -154,7 +176,19 @@ header a {
 	}
 }
 
+/* Nagyfelbontású mobilok esetén (pl. iphon X) a banner magasságát növelni kell, hogy a tartalom elférjen; */
+@media (min-width: 812px) and (orientation:landscape) {
+	#banner {
+		height: 80vh;
+	}
+}
 
+/* Tableten visyont ezt a magasságot csökkenteni kell az alacsonyabb felbontás miatt*/
+@media (min-width: 1024px) and (orientation:landscape) {
+	#banner {
+		height: 50vh;
+	}
+}
 
 /* ================ FOOTER ================== */
 footer {
@@ -178,6 +212,13 @@ footer li {
 footer span {
 	font-size: 0.75rem;
 }
+
+
+
+
+
+
+
 
 
 
